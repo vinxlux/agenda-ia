@@ -1,4 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
+import mathausImg from '../assets/imagens/mathaus.jpg';
+import carlosImg from '../assets/imagens/carlos.jpg';
+import viniciusImg from '../assets/imagens/vinicius.jpg';
 
 type Member = {
   name: string;
@@ -11,20 +14,28 @@ type Member = {
 
 const members: Member[] = [
   {
-    name: 'Fulano de Tal',
-    rm: 'RM123456',
-    turma: 'Turma A',
-    github: 'https://github.com/fulano',
-    linkedin: 'https://www.linkedin.com/in/fulano',
-    photo: 'https://avatars.githubusercontent.com/u/9919?v=4',
+    name: 'Mathaus Victor Souza',
+    rm: '564146',
+    turma: '1TDSPJ',
+    github: '#',
+    linkedin: '#',
+    photo: mathausImg,
   },
   {
-    name: 'Beltrana Silva',
-    rm: 'RM654321',
-    turma: 'Turma B',
-    github: 'https://github.com/beltrana',
-    linkedin: 'https://www.linkedin.com/in/beltrana',
-    photo: 'https://avatars.githubusercontent.com/u/583231?v=4',
+    name: 'Carlos Alberto Guedes',
+    rm: '566022',
+    turma: '1TDSPJ',
+    github: '#',
+    linkedin: '#',
+    photo: carlosImg,
+  },
+  {
+    name: 'Vinícius L. E. M. Garcia',
+    rm: '563340',
+    turma: '1TDSPJ',
+    github: '#',
+    linkedin: '#',
+    photo: viniciusImg,
   },
 ];
 
@@ -36,7 +47,7 @@ export default function Integrantes() {
         {members.map((m) => (
           <article key={m.rm} className="p-4 border rounded bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
             <div className="flex gap-4 items-center">
-              <img src={m.photo} alt={m.name} className="w-16 h-16 rounded-md object-cover" />
+              <img src={m.photo} alt={m.name} className="w-20 h-20 rounded-md object-cover" />
               <div className="">
                 <div className="font-semibold text-slate-900 dark:text-slate-100">{m.name}</div>
                 <div className="text-slate-700 dark:text-slate-300">RM: {m.rm}</div>
@@ -50,7 +61,7 @@ export default function Integrantes() {
           </article>
         ))}
       </div>
-      <p className="mt-3 text-slate-600 dark:text-slate-300">Substitua os dados fictícios por informações reais dos integrantes (nome, foto, RM, turma, GitHub e LinkedIn).</p>
+      <p className="mt-3 text-slate-600 dark:text-slate-300">Se os links de GitHub/LinkedIn estiverem pendentes, substitua os '#' pelos URLs reais dos integrantes.</p>
     </section>
   );
 }
