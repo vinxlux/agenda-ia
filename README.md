@@ -9,50 +9,126 @@ Projeto front-end pronto para a Global Solution. Usa React + Vite + TypeScript e
 3. `npm run dev`
 4. Abra `http://localhost:5173`
 
-## Rotas implementadas
+# Agenda Semanal com IA (Frontend)
 
-- `/` (Home) — página principal com prompt e visualização semanal.
-- `/integrantes` — página de integrantes.
-- `/about` — sobre o projeto.
-- `/faq` — ajuda e exemplos de comandos.
-- `/tarefa/:id` — rota dinâmica para visualizar/editar uma tarefa por `id` (ex.: `/tarefa/42`).
-- `*` — página não encontrada que redireciona para `/` com mensagem.
+Projeto front-end implementado com Vite + React + TypeScript e Tailwind CSS. Esta aplicação permite criar e organizar tarefas semanais, com suporte a entrada em linguagem natural e integração opcional com provedores de IA.
 
-## Tipos importantes
+---
 
-- `Task` (interface) — representa uma tarefa com campos: `id?: number`, `horario: string`, `tarefa: string`, `corFundo?: string | null`, `corTexto?: string | null`, `origem?: 'ia'|'user'|null`.
-- `Day` (union) — dias da semana.
-- `Agenda` — `Record<Day, Task[]>`.
+## 1. Título e Descrição
 
-## Como testar rapidamente
+- **Título:** Agenda Semanal com IA
+- **Descrição:** Aplicação front-end para gerenciar tarefas semanais usando entradas em linguagem natural; integra recursos de IA para sugestões (opcional).
 
-1. Instale dependências e rode o dev server:
+## 2. Status do Projeto
+
+- Em desenvolvimento — funcionalidades centrais implementadas (criação/edição/visualização de tarefas, páginas obrigatórias, integração IA placeholder, persistência local via IndexedDB).
+
+## 3. Sumário
+
+- Sobre o projeto
+- Tecnologias utilizadas
+- Instalação
+- Como usar
+- Estrutura de pastas
+- Rotas principais
+- Autores e créditos
+- Screenshots / Demonstração
+- Contato
+
+## 4. Sobre o Projeto
+
+Projeto desenvolvido como exercício prático para integrar front-end moderno (Vite + TypeScript) com armazenamento local (IndexedDB via Dexie) e uma camada opcional de IA para interpretar comandos em linguagem natural.
+
+## 5. Tecnologias Utilizadas
+
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- Dexie (IndexedDB)
+- react-router-dom
+
+## 6. Instalação
+
+Pré-requisitos: Node.js (>= 18) e npm.
 
 ```bash
+git clone https://github.com/vinxlux/agenda-ia.git
+cd agenda-ia
 npm install
+```
+
+Rodar em desenvolvimento:
+
+```bash
 npm run dev
 ```
 
-2. No navegador, abra `http://localhost:5173` (porta padrão do Vite).
-3. Teste rota dinâmica: acesse `/tarefa/1` (ou clique em um link que aponte para uma tarefa existente) para ver e editar.
+Build para produção:
 
-## Observações para avaliação
+```bash
+npm run build
+```
 
-- Rotas estáticas e dinâmicas foram implementadas com `react-router-dom` e `createBrowserRouter`.
-- Tipos TypeScript foram definidos em `src/types/agenda.ts` com exemplos de Union e Intersection.
+## 7. Como Usar
 
-### Observações
-- Este front está preparado para trabalhar com a API da IA (ex.: GROQ). Troque `VITE_IA_ENDPOINT` se usar outro provedor.
-- Para integrar com o backend Java, aponte o fetch de salvar agenda para o endpoint `POST /api/agenda`.
+- Acesse `http://localhost:3000/` (ou porta exibida pelo Vite).
+- Use o campo principal para inserir instruções: exemplos:
+	- `segunda 09:00 - Academia`
+	- `adicionar terça 19:00 - Jantar`
+	- `organizar reunião com o time na quarta à tarde`
+- Revise e confirme as sugestões geradas pela IA (se ativada) antes de salvar.
 
-## Arquitetura
-- `src/services/ia.ts` - integração com provedor de IA
-- `src/components` - UI components
-- `src/types` - Tipagens TypeScript
+## 8. Estrutura de Pastas
 
-## Requisitos da disciplina
-- React + Vite + TypeScript ✅
-- TailwindCSS ✅
-- Deploy no Vercel (siga as instruções do curso) ✅
+```
+agenda-ia/
+├─ src/
+│  ├─ assets/           # imagens e recursos
+│  ├─ components/       # componentes reutilizáveis
+│  ├─ contexts/         # providers (Agenda, Theme, etc.)
+│  ├─ pages/            # páginas (Home, About, FAQ, Contato, Integrantes...)
+│  ├─ services/         # integração IA, DB
+│  ├─ types/            # tipagens TypeScript
+│  └─ main.tsx
+├─ index.html
+├─ package.json
+└─ README.md
+```
 
-Referência do regulamento da Global Solution: /mnt/data/1TDS Fevereiro - Global Solution 2025-2.pdf
+## 9. Endpoints / Rotas Principais
+
+- `/` — Home (com prompt e visualização semanal)
+- `/about` — Sobre o projeto
+- `/faq` — Perguntas frequentes
+- `/contato` — Contato / Formulário
+- `/integrantes` — Identificação dos integrantes (nome, RM, turma, foto, GitHub, LinkedIn)
+- `/tarefa/:id` — Visualizar/editar tarefa específica
+
+## 10. Autores e Créditos
+
+- Mathaus Victor Souza — RM 564146 — Turma 1TDSPJ — https://github.com/Mathausz
+- Carlos Alberto Guedes — RM 566022 — Turma 1TDSPJ — https://github.com/carlosguedesneto
+- Vinícius L. E. M. Garcia — RM 563340 — Turma 1TDSPJ — https://github.com/vinxlux
+
+## 11. Screenshots / Demonstração
+
+Adicione screenshots na pasta `docs/screenshots/` e atualize os links abaixo.
+
+- Demo (YouTube): https://youtu.be/SEU_VIDEO_AQUI
+
+## 12. Contato
+
+- Repositório: https://github.com/vinxlux/agenda-ia
+- Email: contato@exemplo.com (substitua pelo contato real)
+
+---
+
+### Observações finais
+
+Se desejar, eu posso:
+
+- Inserir screenshots reais em `docs/screenshots/` e atualizar este README.
+- Substituir o link do YouTube pelo vídeo real.
+- Gerar um arquivo `README.pdf` ou um ZIP com `dist/` pronto para entrega.
