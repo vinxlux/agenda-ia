@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import MathausJpg from '../assets/imagens/Mathaus.jpg';
-import CarlosJpg from '../assets/imagens/Carlos.jpg';
-import ViniciusJpg from '../assets/imagens/Vinicius.jpg';
+import MathausJpg from '../assets/mathaus.jpg';
+import CarlosJpg from '../assets/carlos.jpg';
+import ViniciusJpg from '../assets/vinicius.jpg';
 
 type Integrante = {
   nome: string;
