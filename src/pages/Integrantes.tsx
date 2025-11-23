@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import mathausImg from '../assets/imagens/mathaus.jpg';
-import carlosImg from '../assets/imagens/carlos.jpg';
-import viniciusImg from '../assets/imagens/vinicius.jpg';
+import mathausImg from '../assets/imagens/mathaus.svg';
+import carlosImg from '../assets/imagens/carlos.svg';
+import viniciusImg from '../assets/imagens/vinicius.svg';
 
 type Member = {
   name: string;
