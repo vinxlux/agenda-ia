@@ -1,41 +1,38 @@
 ﻿import React from 'react';
-import mathausImg from '../assets/imagens/mathaus.svg';
-import carlosImg from '../assets/imagens/carlos.svg';
-import viniciusImg from '../assets/imagens/vinicius.svg';
 
-type Member = {
-  name: string;
+type Integrante = {
+  nome: string;
   rm: string;
   turma: string;
+  foto: string;
   github: string;
   linkedin: string;
-  photo?: string;
 };
 
-const members: Member[] = [
+const integrantes: Integrante[] = [
   {
-    name: 'Mathaus Victor Souza',
+    nome: 'Mathaus Victor Souza',
     rm: '564146',
     turma: '1TDSPJ',
-    github: '#',
-    linkedin: '#',
-    photo: mathausImg,
+    foto: '/src/assets/imagens/Mathaus.jpg',
+    github: 'https://github.com/Mathausz',
+    linkedin: 'https://www.linkedin.com/in/mathaus-marcelino-677baa331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
-    name: 'Carlos Alberto Guedes',
+    nome: 'Carlos Alberto Guedes',
     rm: '566022',
     turma: '1TDSPJ',
-    github: '#',
-    linkedin: '#',
-    photo: carlosImg,
+    foto: '/src/assets/imagens/Carlos.jpg',
+    github: 'https://github.com/carlosguedesneto',
+    linkedin: 'https://www.linkedin.com/in/carlos-alberto-13782a353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
   {
-    name: 'Vinícius L. E. M. Garcia',
+    nome: 'Vinícius L. E. M. Garcia',
     rm: '563340',
     turma: '1TDSPJ',
-    github: '#',
-    linkedin: '#',
-    photo: viniciusImg,
+    foto: '/src/assets/imagens/Vinicius.jpg',
+    github: 'https://github.com/vinxlux',
+    linkedin: 'https://linkedin.com/in/vinícius-luis-90ba05309',
   },
 ];
 
@@ -44,12 +41,12 @@ export default function Integrantes() {
     <section>
       <h1 className="text-2xl font-semibold mb-3">Integrantes</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {members.map((m) => (
+        {integrantes.map((m) => (
           <article key={m.rm} className="p-4 border rounded bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700">
             <div className="flex gap-4 items-center">
-              <img src={m.photo} alt={m.name} className="w-20 h-20 rounded-md object-cover" />
+              <img src={m.foto} alt={m.nome} className="w-20 h-20 rounded-md object-cover" />
               <div className="">
-                <div className="font-semibold text-slate-900 dark:text-slate-100">{m.name}</div>
+                <div className="font-semibold text-slate-900 dark:text-slate-100">{m.nome}</div>
                 <div className="text-slate-700 dark:text-slate-300">RM: {m.rm}</div>
                 <div className="text-slate-700 dark:text-slate-300">Turma: {m.turma}</div>
               </div>
