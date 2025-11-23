@@ -1,4 +1,7 @@
 ﻿import React from 'react';
+import MathausJpg from '../assets/imagens/Mathaus.jpg';
+import CarlosJpg from '../assets/imagens/Carlos.jpg';
+import ViniciusJpg from '../assets/imagens/Vinicius.jpg';
 
 type Integrante = {
   nome: string;
@@ -14,7 +17,7 @@ const integrantes: Integrante[] = [
     nome: 'Mathaus Victor Souza',
     rm: '564146',
     turma: '1TDSPJ',
-    foto: '/src/assets/imagens/Mathaus.jpg',
+    foto: MathausJpg,
     github: 'https://github.com/Mathausz',
     linkedin: 'https://www.linkedin.com/in/mathaus-marcelino-677baa331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
@@ -22,7 +25,7 @@ const integrantes: Integrante[] = [
     nome: 'Carlos Alberto Guedes',
     rm: '566022',
     turma: '1TDSPJ',
-    foto: '/src/assets/imagens/Carlos.jpg',
+    foto: CarlosJpg,
     github: 'https://github.com/carlosguedesneto',
     linkedin: 'https://www.linkedin.com/in/carlos-alberto-13782a353?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
   },
@@ -30,7 +33,7 @@ const integrantes: Integrante[] = [
     nome: 'Vinícius L. E. M. Garcia',
     rm: '563340',
     turma: '1TDSPJ',
-    foto: '/src/assets/imagens/Vinicius.jpg',
+    foto: ViniciusJpg,
     github: 'https://github.com/vinxlux',
     linkedin: 'https://linkedin.com/in/vinícius-luis-90ba05309',
   },
