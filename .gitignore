@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# Env files
+.env
+.env.local
+
+# Dependency lock
+package-lock.json
+
+# Vercel
+.vercel/
+
+# Misc
+.DS_Store
+*.log
