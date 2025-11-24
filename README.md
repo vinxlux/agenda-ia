@@ -115,7 +115,7 @@ agenda-ia/
 ## 12. Contato
 
 - Repositório: https://github.com/vinxlux/agenda-ia.git
-- Vercel: 
+- Vercel: https://agenda-ia-gs-2khj.vercel.app/
 ---
 
 ### Observações finais
