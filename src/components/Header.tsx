@@ -28,6 +28,8 @@ export default function Header() {
             <NavLink to="/integrantes" className={({ isActive }) => isActive ? 'text-blue-600 font-medium' : 'text-slate-700 dark:text-slate-300'}>Integrantes</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? 'text-blue-600 font-medium' : 'text-slate-700 dark:text-slate-300'}>Sobre</NavLink>
             <NavLink to="/faq" className={({ isActive }) => isActive ? 'text-blue-600 font-medium' : 'text-slate-700 dark:text-slate-300'}>FAQ</NavLink>
+            <NavLink to="/auth" className={({ isActive }) => isActive ? 'text-green-600 font-medium' : 'text-slate-700 dark:text-slate-300'}>Login</NavLink>
+            <NavLink to="/tarefas" className={({ isActive }) => isActive ? 'text-purple-600 font-medium' : 'text-slate-700 dark:text-slate-300'}>Tarefas</NavLink>
           </nav>
 
           <button
@@ -59,6 +61,8 @@ export default function Header() {
             <NavLink onClick={() => setOpen(false)} to="/integrantes" className={({ isActive }) => isActive ? 'text-blue-600 font-medium px-2 py-2 rounded' : 'text-slate-700 dark:text-slate-300 px-2 py-2 rounded'}>Integrantes</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/about" className={({ isActive }) => isActive ? 'text-blue-600 font-medium px-2 py-2 rounded' : 'text-slate-700 dark:text-slate-300 px-2 py-2 rounded'}>Sobre</NavLink>
             <NavLink onClick={() => setOpen(false)} to="/faq" className={({ isActive }) => isActive ? 'text-blue-600 font-medium px-2 py-2 rounded' : 'text-slate-700 dark:text-slate-300 px-2 py-2 rounded'}>FAQ</NavLink>
+            <NavLink onClick={() => setOpen(false)} to="/auth" className={({ isActive }) => isActive ? 'text-green-600 font-medium px-2 py-2 rounded' : 'text-slate-700 dark:text-slate-300 px-2 py-2 rounded'}>Login</NavLink>
+            <NavLink onClick={() => setOpen(false)} to="/tarefas" className={({ isActive }) => isActive ? 'text-purple-600 font-medium px-2 py-2 rounded' : 'text-slate-700 dark:text-slate-300 px-2 py-2 rounded'}>Tarefas</NavLink>
           </div>
         </div>
       )}

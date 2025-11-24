@@ -1,8 +1,10 @@
+import TarefasPage from './pages/Tarefas';
+import AuthPage from './pages/Auth';
 import React from 'react'
+import "./styles/index.css";
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
-import './index.css'
 import { initializeDatabase } from './services/database';
 import Faq from './pages/Faq';
 import Home from './pages/Home';
@@ -26,6 +28,8 @@ const router = createBrowserRouter(
         { path: 'about', element: <About /> },
         { path: 'contato', element: <Contact /> },
         { path: 'faq', element: <Faq /> },
+        { path: 'auth', element: <AuthPage /> },
+        { path: 'tarefas', element: <TarefasPage /> },
         { path: 'tarefa/:id', element: <TarefaPage /> },
         { path: '*', element: <NotFound /> },
       ],
@@ -48,3 +52,5 @@ const router = createBrowserRouter(
     </React.StrictMode>
   );
 })();
+
+// ./mvnw quarkus:dev

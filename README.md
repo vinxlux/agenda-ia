@@ -112,17 +112,10 @@ agenda-ia/
 - Carlos Alberto Guedes — RM 566022 — Turma 1TDSPJ — https://github.com/carlosguedesneto
 - Vinícius L. E. M. Garcia — RM 563340 — Turma 1TDSPJ — https://github.com/vinxlux
 
-## 11. Screenshots / Demonstração
-
-Adicione screenshots na pasta `docs/screenshots/` e atualize os links abaixo.
-
-- Demo (YouTube): https://youtu.be/SEU_VIDEO_AQUI
-
 ## 12. Contato
 
-- Repositório: https://github.com/vinxlux/agenda-ia
-- Email: contato@exemplo.com (substitua pelo contato real)
-
+- Repositório: https://github.com/vinxlux/agenda-ia.git
+- Vercel: 
 ---
 
 ### Observações finais
